@@ -1,9 +1,13 @@
 import React from 'react';
 import {Box, Center, Flex} from "@mantine/core";
 import {Icon, Link} from "@components";
-import {Logo} from "@images";
+import {Logo as BigLogo} from "@images";
+import {Logo as SmallLogo} from "@icons";
+import {useDevice} from "@hooks";
 
 export const Header = () => {
+  const {isTablet, isMobile} = useDevice();
+
   return (
     <Box w={"100%"}
          h={"84px"}
@@ -14,20 +18,20 @@ export const Header = () => {
             justify="flex-start"
             align="center"
             direction="row"
-            wrap="wrap"
+
       >
-        <Center w={"32%"}
+        <Center w={isMobile ? "20%" : "32%"}
                 h={"100%"}
         >
-          <Icon src={Logo} alt={"logo"}/>
+          <Icon src={isMobile ? SmallLogo : BigLogo} alt={"logo"}/>
         </Center>
-        <Flex w={"36%"}
+        <Flex w={isTablet || isMobile ? "80%" : "36%"}
               h={"100%"}
               justify="center"
               align="center"
               direction="row"
               wrap="wrap"
-              gap={"60px"}
+              gap={isMobile ? "10%" : "60px"}
               cursor={"pointer"}
         >
           <Link to={"/vacancies"}>
