@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box, Center, Flex} from "@mantine/core";
 import {Icon, Link} from "@components";
-import {Logo} from "@assets/images"
+import {Logo} from "@images";
 
 export const Header = () => {
   return (
