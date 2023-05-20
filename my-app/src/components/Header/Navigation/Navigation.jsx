@@ -1,6 +1,6 @@
 import React from 'react';
 import {Flex} from "@mantine/core";
-import {Link} from "@components";
+import {Link} from "@templates";
 import {useDevice} from "@hooks";
 
 export const Navigation = () => {

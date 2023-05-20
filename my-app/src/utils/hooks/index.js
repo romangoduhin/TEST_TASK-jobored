@@ -1,3 +1,3 @@
-import {useDevice} from "./useDevice.js";
+import {useDevice} from "./useDevice";
 
 export {useDevice}
