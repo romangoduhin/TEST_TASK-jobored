@@ -1,7 +1,7 @@
 import React from 'react';
 import {Flex} from "@mantine/core";
-import {Logo} from "@components/Header/Logo/index.js";
-import {Navigation} from "@components/Header/Navigation/index.js";
+import {Logo} from "./Logo";
+import {Navigation} from "./Navigation";
 
 export const Header = () => {
   return (

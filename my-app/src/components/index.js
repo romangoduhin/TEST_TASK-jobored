@@ -1,5 +1,5 @@
 import {Header} from "./Header";
-import {Icon} from "./Icon";
-import {Link} from "./Link";
+import {Main} from "./Main";
+import {EmptyContent} from "./EmptyContent";
 
-export {Header, Icon, Link}
+export {Header, Main, EmptyContent}

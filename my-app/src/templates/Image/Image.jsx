@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Icon = ({width, height, src, alt = "icon"}) => {
+export const Image = ({width, height, src, alt = "image"}) => {
   return (
     <img width={width} height={height} src={src} alt={alt}/>
   );
