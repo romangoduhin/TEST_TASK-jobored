@@ -1,3 +1,5 @@
 import {useDevice} from "./useDevice";
+import {useLocalStorage} from "./useLocalStorage";
+import {useAuth} from "./useAuth";
 
-export {useDevice}
+export {useDevice, useLocalStorage, useAuth}
