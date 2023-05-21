@@ -1,4 +1,4 @@
-import Logo from "./logo.png"
-import EmptyContent from "./emptyContent.png"
+import Logo from "./logo.svg"
+import EmptyContent from "./emptyContent.svg"
 
 export {Logo, EmptyContent}
