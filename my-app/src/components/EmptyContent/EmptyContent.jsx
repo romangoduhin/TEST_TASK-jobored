@@ -2,8 +2,11 @@ import React from 'react';
 import {Center, Flex, Text} from "@mantine/core";
 import {EmptyContent as EmptyContentImage} from "@images";
 import {Button, Image} from "@templates";
+import {useStyles} from "@hooks";
 
 export const EmptyContent = ({text, buttonText, onClick}) => {
+  const {classes} = useStyles();
+
   return (
     <Center w={"100%"} h={"100%"}>
       <Flex w={"fit-content"}
@@ -15,16 +18,7 @@ export const EmptyContent = ({text, buttonText, onClick}) => {
       >
         <Image src={EmptyContentImage}/>
         <Text align={"center"} fz="24px">{text}</Text>
-        <Button height={"42px"}
-                sx={{
-                  color: "#3B7CD3",
-                  backgroundColor: "#DEECFF",
-                  '&:hover': {
-                    color: "white",
-                  },
-                }}
-                onClick={onClick}
-        >
+        <Button className={classes.lightButton} onClick={onClick}>
           {buttonText}
         </Button>
       </Flex>

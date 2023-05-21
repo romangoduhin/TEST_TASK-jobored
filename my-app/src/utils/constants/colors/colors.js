@@ -1,5 +1,15 @@
 export const COLORS = {
-  "blue600": ["#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC"],
+  "blue600": ["#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3", "#3B7CD3"],
   "blue500": ["#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC", "#5E96FC"],
-  "blue200": ["#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF"]
+  "blue400": ["#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF", "#92C1FF"],
+  "blue300": ["#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF", "#B7D6FF"],
+  "blue200": ["#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF", "#C9E0FF"],
+  "blue100": ["#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF", "#DEECFF"],
+  "white": ["#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF", "#FFFFFF"],
+  "grey100": ["#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6", "#F5F5F6"],
+  "grey200": ["#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED", "#EAEBED"],
+  "grey300": ["#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC", "#D5D6DC"],
+  "grey500": ["#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9", "#ACADB9"],
+  "grey600": ["#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88", "#7B7C88"],
+  "black": ["#232134", "#232134", "#232134", "#232134", "#232134", "#232134", "#232134", "#232134", "#232134", "#232134"],
 }

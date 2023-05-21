@@ -5,6 +5,7 @@ import {useEffect} from "react";
 import {useAuth} from "@hooks";
 import {Loader} from "@templates";
 import {Notifications} from "@mantine/notifications";
+import {COLORS} from "@/utils/constants/colors/index.js";
 
 export default function App() {
   const {isAuthorized, authorize} = useAuth();
@@ -16,7 +17,7 @@ export default function App() {
   }, [isAuthorized]);
 
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
+    <MantineProvider theme={{colors: COLORS}} withGlobalStyles withNormalizeCSS>
       <Notifications/>
       <Box w={"100vw"} h={"100vh"}>
         {
