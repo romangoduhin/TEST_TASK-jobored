@@ -29,7 +29,7 @@ export const Vacancies = () => {
   )
 
   return (
-    <Flex w={"100%"} h={"100%"} direction={"row"} justify={"center"} bg={"red"}>
+    <Flex w={"100%"} h={"100%"} direction={"row"} justify={"center"}>
       <VacanciesList vacancies={vacancies}/>
     </Flex>
   );

@@ -14,6 +14,7 @@ export default defineConfig({
       "@services": `${path.resolve(__dirname, "./src/services/")}`,
       "@hooks": `${path.resolve(__dirname, "./src/utils/hooks")}`,
       "@helpers": `${path.resolve(__dirname, "./src/utils/helpers")}`,
+      "@constants": `${path.resolve(__dirname, "./src/utils/constants")}`,
       "@icons": `${path.resolve(__dirname, "./src/assets/icons")}`,
       "@images": `${path.resolve(__dirname, "./src/assets/images")}`,
     }

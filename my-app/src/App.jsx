@@ -5,7 +5,7 @@ import {useEffect} from "react";
 import {useAuth} from "@hooks";
 import {Loader} from "@templates";
 import {Notifications} from "@mantine/notifications";
-import {COLORS} from "@/utils/constants/colors/index.js";
+import {COLORS} from "@constants";
 
 export default function App() {
   const {isAuthorized, authorize} = useAuth();

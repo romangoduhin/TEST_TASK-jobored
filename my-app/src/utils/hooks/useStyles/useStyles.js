@@ -31,7 +31,8 @@ export const useStyles = createStyles(({colors}) => ({
   },
   card: {
     padding: "24px",
-    border: `1px solid ${colors.grey200}`,
+    border: `1px solid`,
+    borderColor: colors.grey200,
     borderRadius: "12px",
     backgroundColor: colors.white
   },
@@ -40,9 +41,19 @@ export const useStyles = createStyles(({colors}) => ({
     fontWeight: "400",
     fontSize: "16px",
     lineHeight: "20px",
-    color: colors.black
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap"
   },
-  activeText: {
-    color: colors.blue500,
+  clickableIcon: {
+    stroke: colors.grey500,
+    fill: "none",
+    '&:hover': {
+      stroke: colors.blue500,
+    },
+    '&:active': {
+      stroke: colors.blue500,
+      fill: colors.blue500,
+    },
   }
 }))

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Center, Flex, Text} from "@mantine/core";
 import {EmptyContent as EmptyContentImage} from "@images";
-import {Button, Image} from "@templates";
+import {Button} from "@templates";
 import {useStyles} from "@hooks";
+import {Center, Flex} from "@mantine/core";
 
 export const EmptyContent = ({text, buttonText, onClick}) => {
   const {classes} = useStyles();
@@ -16,7 +16,7 @@ export const EmptyContent = ({text, buttonText, onClick}) => {
             direction={"column"}
             gap={"32px"}
       >
-        <Image src={EmptyContentImage}/>
+        <EmptyContentImage/>
         <Text align={"center"} fz="24px">{text}</Text>
         <Button className={classes.lightButton} onClick={onClick}>
           {buttonText}
