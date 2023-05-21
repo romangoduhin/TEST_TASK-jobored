@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Loader} from "@templates";
 import {superjobApi} from "@services";
-import {Box} from "@mantine/core";
-import {VacanciesList} from "@pages/Vacancies/VacanciesList/index.js";
+import {Flex} from "@mantine/core";
+import {VacanciesList} from "@components/VacanciesList/index.js";
 import {EmptyContent} from "@components";
 import {isArrayEmpty} from "@helpers";
 
@@ -29,8 +29,8 @@ export const Vacancies = () => {
   )
 
   return (
-    <Box w={"100%"} h={"100%"} bg={"red"}>
+    <Flex w={"100%"} h={"100%"} direction={"row"} justify={"center"} bg={"red"}>
       <VacanciesList vacancies={vacancies}/>
-    </Box>
+    </Flex>
   );
 };

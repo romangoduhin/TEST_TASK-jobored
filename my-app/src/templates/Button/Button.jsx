@@ -1,13 +1,13 @@
 import React from 'react';
 import {Button as MantineButton} from "@mantine/core";
 
-export const Button = ({size = "md", height = "40px", onClick, children, sx}) => {
+export const Button = ({size = "md", height = "40px", onClick, children, sx, ...attrs}) => {
   return (
     <MantineButton
       sx={
         sx ? sx : {
           borderRadius: "8px",
-          backgroundColor: "#5E96FC",
+          backgroundColor: "##5E96FC",
           '&:hover': {
             backgroundColor: "#92C1FF",
           },
@@ -19,6 +19,7 @@ export const Button = ({size = "md", height = "40px", onClick, children, sx}) =>
       h={height}
       size={size}
       onClick={onClick}
+      {...attrs}
     >
       {children}
     </MantineButton>
