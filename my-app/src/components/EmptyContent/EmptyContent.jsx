@@ -2,7 +2,7 @@ import React from 'react';
 import {EmptyContent as EmptyContentImage} from "@images";
 import {Button} from "@templates";
 import {useStyles} from "@hooks";
-import {Center, Flex} from "@mantine/core";
+import {Center, Flex, Text} from "@mantine/core";
 
 export const EmptyContent = ({text, buttonText, onClick}) => {
   const {classes} = useStyles();
