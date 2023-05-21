@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box} from "@mantine/core";
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import {Favorites, Vacancies} from "@pages";
 
 export const Main = () => {
@@ -12,6 +12,7 @@ export const Main = () => {
       <Routes>
         <Route path="/vacancies" element={<Vacancies/>}/>
         <Route path="/favorites" element={<Favorites/>}/>
+        <Route path='*' element={<Navigate to='/vacancies'/>}/>
       </Routes>
     </Box>
   );
