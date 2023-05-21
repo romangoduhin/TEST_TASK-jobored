@@ -1,24 +1,22 @@
 import React from 'react';
 import {Button as MantineButton} from "@mantine/core";
+import {useStyles} from "@hooks";
 
-export const Button = ({size = "md", height = "40px", onClick, children, sx}) => {
+export const Button = ({
+                         onClick,
+                         size = "sm",
+                         children,
+                         className,
+                         ...attrs
+                       }) => {
+  const {classes, cx} = useStyles();
+
+  const style = className ? className : cx(classes.button, {[classes.smallButton]: size === "sm"})
+
   return (
-    <MantineButton
-      sx={
-        sx ? sx : {
-          borderRadius: "8px",
-          backgroundColor: "#5E96FC",
-          '&:hover': {
-            backgroundColor: "#92C1FF",
-          },
-          '&:active': {
-            backgroundColor: "#3B7CDD",
-          },
-        }}
-      fz={"14px"}
-      h={height}
-      size={size}
-      onClick={onClick}
+    <MantineButton className={style}
+                   onClick={onClick}
+                   {...attrs}
     >
       {children}
     </MantineButton>

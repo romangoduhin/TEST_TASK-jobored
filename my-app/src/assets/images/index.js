@@ -1,4 +1,5 @@
-import Logo from "./logo.png"
-import EmptyContent from "./emptyContent.png"
+import {ReactComponent as BigLogo} from "./bigLogo.svg"
+import {ReactComponent as SmallLogo} from "./smallLogo.svg"
+import {ReactComponent as EmptyContent} from "./emptyContent.svg"
 
-export {Logo, EmptyContent}
+export {BigLogo, SmallLogo, EmptyContent}
