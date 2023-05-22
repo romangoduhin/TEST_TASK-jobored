@@ -11,6 +11,6 @@ export const TextButton = ({
   const {classes} = useStyles();
 
   return (
-    <Text className={classes.textButton} {...attrs}>{text}{icon}</Text>
+    <Text className={classes.textButton} onClick={onClick} {...attrs}>{text}{icon}</Text>
   );
 };

@@ -42,4 +42,12 @@ export const superjobApi = {
       showError(err)
     }
   },
+  getCatalogues: async () => {
+    try {
+      const {data} = await instance.get(`catalogues`)
+      return data
+    } catch (err) {
+      showError(err)
+    }
+  },
 }
