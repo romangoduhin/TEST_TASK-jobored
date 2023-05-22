@@ -6,7 +6,7 @@ import {Box} from "@mantine/core";
 export const VacanciesList = ({vacancies}) => {
   return (
     <Box maw={"773px"}
-         w={"95%"}
+         w={"100%"}
          h={"100%"}
     >
       <List gap={"16px"}

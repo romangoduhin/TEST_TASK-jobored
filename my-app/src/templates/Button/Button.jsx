@@ -4,7 +4,7 @@ import {useStyles} from "@hooks";
 
 export const Button = ({
                          onClick,
-                         size = "sm",
+                         size = "md",
                          children,
                          className,
                          ...attrs

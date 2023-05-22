@@ -2,8 +2,10 @@ import React, {useEffect, useState} from 'react';
 import {Loader} from "@templates";
 import {superjobApi} from "@services";
 import {Flex, Pagination} from "@mantine/core";
-import {EmptyContent, Search, VacanciesList} from "@components";
+import {EmptyContent, VacanciesList} from "@components";
 import {isArrayEmpty} from "@helpers";
+import {Search} from "./Search";
+import {Filter} from "@pages/Vacancies/Filter/index.js";
 
 const MAX_API_ENTITIES_COUNT = 500
 const INITIAL_PAGE = 1;
@@ -51,13 +53,21 @@ export const Vacancies = () => {
           pb={"44px"}
           w={"100%"}
           h={"auto"}
-          gap={"16px"}
-          direction={"column"}
-          align={"center"}
+          direction={"row"}
+          justify={"center"}
+          wrap={"wrap"}
+          gap={"28px"}
           bg={"grey100"}>
-      <Search/>
-      <VacanciesList vacancies={vacancies}/>
-      <Pagination mt={"24px"} value={currentPage} onChange={setCurrentPage} total={pagesCount}/>
+      <Filter/>
+      <Flex maw={"773px"}
+            w={"80%"}
+            gap={"16px"}
+            direction={"column"}
+            align={"center"}>
+        <Search/>
+        <VacanciesList vacancies={vacancies}/>
+        <Pagination mt={"24px"} value={currentPage} onChange={setCurrentPage} total={pagesCount}/>
+      </Flex>
     </Flex>
   );
 };

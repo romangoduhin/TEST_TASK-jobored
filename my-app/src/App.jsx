@@ -28,7 +28,6 @@ export default function App() {
             </>
             : <Loader text={"Authorizing"}/>
         }
-
       </Box>
     </MantineProvider>
   );

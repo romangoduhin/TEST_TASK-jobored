@@ -1,14 +1,11 @@
 import React from 'react';
 import {Text} from "@mantine/core";
-import {useStyles} from "@hooks";
 
 export const Salary = ({
                          paymentTo,
                          paymentFrom,
                          currency
                        }) => {
-  const {classes} = useStyles();
-
   const getDiapason = () => {
     if (paymentFrom && paymentTo) {
       return `з/п от ${paymentFrom} - ${paymentTo} ${currency}`
@@ -21,7 +18,7 @@ export const Salary = ({
     }
   }
   return (
-    <Text className={classes.text} fw={"600"}>
+    <Text fw={"600"}>
       {getDiapason()}
     </Text>
   );

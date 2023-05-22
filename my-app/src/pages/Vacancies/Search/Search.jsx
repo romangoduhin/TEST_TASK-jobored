@@ -7,12 +7,13 @@ export const Search = () => {
   //TODO update search design
   return (
     <Input maw={"773px"}
-           w={"95%"}
+           w={"100%"}
            size={"md"}
            icon={<SearchIcon/>}
            rightSection={
-             <Button mr={"70px"} size={"sm"} onClick={console.log}>Поиск</Button>
+             <Button size={"sm"} onClick={console.log}>Поиск</Button>
            }
+           rightSectionWidth={"100px"}
            placeholder="Введите название вакансии"/>
   );
 };
