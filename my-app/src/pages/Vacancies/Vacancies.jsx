@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Loader} from "@templates";
 import {superjobApi} from "@services";
 import {Flex, Pagination} from "@mantine/core";
-import {VacanciesList} from "@components/VacanciesList/index.js";
-import {EmptyContent} from "@components";
+import {EmptyContent, Search, VacanciesList} from "@components";
 import {isArrayEmpty} from "@helpers";
 
 const MAX_API_ENTITIES_COUNT = 500
@@ -17,8 +16,6 @@ export const Vacancies = () => {
   const [currentPage, setCurrentPage] = useState(INITIAL_PAGE);
 
   const pagesCount = Math.ceil(totalCount / PAGE_SIZE);
-  
-  const isPaginationVisible = !!pagesCount;
 
   useEffect(() => {
     setIsLoading(true);
@@ -40,6 +37,7 @@ export const Vacancies = () => {
     fetchVacancies();
   }, [currentPage]);
 
+  if (isLoading) return <Loader/>
 
   //TODO update onClick
   if (isArrayEmpty(vacancies) && !isLoading) return (
@@ -49,9 +47,17 @@ export const Vacancies = () => {
   )
 
   return (
-    <Flex w={"100%"} h={"100%"} direction={"column"} align={"center"}>
-      {isLoading ? <Loader/> : <VacanciesList vacancies={vacancies}/>}
-      {isPaginationVisible && <Pagination value={currentPage} onChange={setCurrentPage} total={pagesCount}/>}
+    <Flex pt={"40px"}
+          pb={"44px"}
+          w={"100%"}
+          h={"auto"}
+          gap={"16px"}
+          direction={"column"}
+          align={"center"}
+          bg={"grey100"}>
+      <Search/>
+      <VacanciesList vacancies={vacancies}/>
+      <Pagination mt={"24px"} value={currentPage} onChange={setCurrentPage} total={pagesCount}/>
     </Flex>
   );
 };
