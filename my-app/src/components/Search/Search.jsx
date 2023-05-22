@@ -4,6 +4,7 @@ import {Input} from "@mantine/core";
 import {Search as SearchIcon} from "@icons";
 
 export const Search = () => {
+  //TODO update search design
   return (
     <Input maw={"773px"}
            w={"95%"}
